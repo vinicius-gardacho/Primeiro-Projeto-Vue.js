@@ -1,11 +1,11 @@
-<script setup></script>
+<script setup>
+  import Titulo from './components/Titulo.vue'
+  import ListaTimes from './components/ListaTimes.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <Titulo />
+  <ListaTimes /> 
 </template>
 
 <style scoped></style>
