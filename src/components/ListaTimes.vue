@@ -5,10 +5,7 @@
     const times = ref([
         'Santos',
         'Gremio',
-        'São Paulo',
-        'Palmeiras',
-        'Corinthians',
-        'Flamengo'
+        'São Paulo'
     ])
 
     function adicionar(){
@@ -25,3 +22,40 @@
         <li v-for="time in times" :key="time">{{ time }}</li>
     </ul>
 </template>
+
+<style scoped>
+    h2 {
+        color: #333;
+    }
+
+    input {
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        background-color: #f0f0f0;
+        margin-bottom: 5px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+</style>
